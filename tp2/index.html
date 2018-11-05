@@ -1,33 +1,83 @@
 <!doctype html>
 <html>
     <head>
+        
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>TP2</title>
+        <script type="text/javascript" src="formulaire.js"></script>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!--<link rel="apple-touch-icon" href="apple-touch-icon.png">-->
         <!-- Place favicon.ico in the root directory -->
-
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
+        
+        
         
         <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
+        <link rel="stylesheet" type="text/css" href="style.css"/>
         <!--<script src="js/main.js"></script>-->
     </head>
-    <body>        
-        <h1>tp2</h1>
+        
+    <body>       
+        <center>
+        <h1>Saisie d'une fiche "personne"</h1>
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
+        <!--<p>Hello world! This is HTML5 Boilerplate.</p>
+        <img src="../galilee.png" alt="Logo Galilee"/>-->
+        <div id="main">
+        <form id = "myform" >
+            
+            <table width = 400px>
+            </tr>
+            <tr>
+            <td> <label for="nom">Nom</label></td>
+            <td>
+                <input type="text" id="nom" name="Nom" maxlength="20" name="nom" minlength="5">
+                
+            </td>
+            </tr>
+            <tr>
+            <td><label for="Prénom">Prénom</label></td>
+            <td><input type="text" id="prenom" Prénom="Prénom"minlength="5" Prénom="Prénom" maxlength="20"></td>
+        </tr>
+        <tr>
+            <td><label for= "Date de naissance">Date de naissance</label></td>
+            <td><input type="DATE" Date de naissance="Date de naissance" id = "Datenss"></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Adresse">Adresse</label></td>
+        <td><input type="text" Adresse="Adresse" id="Adresse" minlength="5" maxlength="50"></td>
+    </tr>
+    <tr>
+        <td>
+            <label for= "Mail">Mail</label>
+        </td>
+   
+            <td><input type="email" Mail="Mail" id= "Mail" minlength="5" Mail="Mail"maxlength="30"size="20"></td></tr>
+<tr><td><center>
+    <input type="button" value="Valider" onclick="validation()"/>
+</center></td></tr>
+
+
+  
+                </table>
+                
+                
+                 
+            </table>
+        </form>
+        </div>
+        
+        <div id="error" >   
+             
+        </div>
+
+        <div id="resultat" > 
+           
+                
+            </div>
+        </center>
     </body>
 </html>
